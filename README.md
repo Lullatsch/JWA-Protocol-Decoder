@@ -1,7 +1,7 @@
 # JWA-Protocol-Decoder
 This repository provides code to read messages from the game Jurassic World Alive.
 
-It's written completely in Python 3 and requires [mitmproxy]{https://github.com/mitmproxy/mitmproxy}.
+It's written completely in Python 3 and requires [mitmproxy](https://github.com/mitmproxy/mitmproxy).
 
 To run this use mitmproxy with the following command:
 ```
