@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+import os
 
 import mitmproxy.http
 from mitmproxy import tcp
@@ -13,7 +14,7 @@ conversation_parsed = defaultdict(lambda: [])
 
 
 def save_to_file(filepath, write_mode, data):
-    Path(filepath).mkdir(parents=True, exist_ok=True)
+    Path(os.path.split(filepath)[0]).mkdir(parents=True, exist_ok=True)
     with open(filepath, write_mode) as f:
         f.write(data)
 
