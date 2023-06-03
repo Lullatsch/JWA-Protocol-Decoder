@@ -4,7 +4,9 @@ This repository provides code to read messages from the game Jurassic World Aliv
 1. Set up Python and mitmproxy:
 - For installing mitmproxy pls visit their guide [Mitmproxy installation](https://docs.mitmproxy.org/stable/overview-installation/).
 - Install the [Mitmproxy certificate](https://docs.mitmproxy.org/stable/concepts-certificates/)
-To get mitmproxy running with JWA you will need to install the mitmproxy certificate as a **system** certificate! (requires root on android).
+To get mitmproxy running with JWA you will need to install the mitmproxy certificate as a **system** certificate! (requires root on android)
+[External guide](https://gist.github.com/pwlin/8a0d01e6428b7a96e2eb).
+
 If no root is available you would need to to rebuild the apk with a modified `network_security_config.xml`. Every time the app updates you would need to rebuild. :(
 
 2. To run this use mitmproxy with the following command:
